@@ -4,7 +4,6 @@ a simple example of request_html
 __author__ = Leo.Feng
 """
 import time
-import traceback
 import requests_html
 
 
@@ -25,7 +24,7 @@ class GetConceptJinSe(object):
 
     def get_concept_list(self):
         rsp = self.get_response(self.concept_url)
-        print('response: {}'.format(rsp))
+        print(f'response: {rsp}')
         return rsp['list']
 
     def get_coin_list(self, _dict):
@@ -45,9 +44,9 @@ class GetConceptJinSe(object):
         a = time.time()
         concept_list = self.get_concept_list()
         result = [self.get_coin_list(c) for c in concept_list]
-        print('result: {}'.format(result))
+        print(f'result: {result}')
         using_time = time.time() - a
-        print('using time: {}'.format(using_time))
+        print(f'using time: {using_time}')
 
 
 if __name__ == '__main__':
@@ -55,6 +54,4 @@ if __name__ == '__main__':
         jinse_concept = GetConceptJinSe()
         jinse_concept.run()
     except Exception as e:
-        print('{}'.format(e))
-        _str = '获取金色财经板块信息出错： {}'.format(traceback.format_exc())
-        print(_str)
+        print(f'{e}')
