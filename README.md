@@ -1,5 +1,5 @@
 # tripforcrawlers
-#### <font color=red>waiting for update examples...</font>
+#### <font color=#00ffff>waiting for update examples...</font>
 ##### 基本原理
 模拟http请求，获取网页源码、json或xml，抽取、结构化数据入库。
 
