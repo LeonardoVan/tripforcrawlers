@@ -1,14 +1,14 @@
 # tripforcrawlers
-<span style="color:red;">waiting for update examples...</span>
+#### <span style="color:red;">waiting for update examples...</span>
 ##### 基本原理
 模拟http请求，获取网页源码、json或xml，抽取、结构化数据入库。
 
 ##### 反爬虫
-1、设置headers
-2、获取cookies
-3、设置爬取间隔
-4、使用proxy代理
-5、使用浏览器获取，一般用来加载ajax、或者比较难解析cookies的网页 selenium + Web browser（headless） or chromeless（node.js）  
+1、设置headers  
+2、获取cookies  
+3、设置爬取间隔  
+4、使用proxy代理  
+5、使用浏览器获取，一般用来加载ajax、或者比较难解析cookies的网页 selenium + Web browser（headless） or chromeless（node.js）    
 ......
 
 ##### 爬虫库
